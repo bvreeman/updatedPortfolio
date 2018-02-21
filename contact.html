@@ -26,7 +26,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                    <a class="navbar-brand alert alert-success" href="#">Brandon Vreeman</a>
+                    <h1>Brandon Vreeman</h1>
             </div>
             <div>
                 <ul class="nav navbar-nav navbar-right">
@@ -41,11 +41,39 @@
 </body>
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-xs-12">  
+            <div class="col-md-8 col-xs-12"> 
+                <div class="panel panel-default"> 
                 <div class="panel-body">
                     <h1>Contact</h1>
                     <div style='border-bottom:1px solid #ccc;'></div>
-                </div>    
+                <form id="contact-form" method="post" action="contact.php" role="form">
+                    <div class="messages"></div>
+                    <div class="controls">    
+                        <div class="row">
+                            <div class="col-md-8 col-xs-12">
+                                <br>
+                                <div class="form-group">
+                                    <label for="form_name">Full Name</label>
+                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your full name">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form_email">Email</label>
+                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form_message">Message</label>
+                                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me" rows="6"></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <input type="submit" class="btn btn-send" value="Send message">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                </div>
+                </div>
             </div>            
             <div class="col-md-4 col-xs-12">
                 <div class="panel panel-default">
@@ -71,35 +99,6 @@
                 </div>
             </div>
         </div>
-        <form id="contact-form" method="post" action="contact.php" role="form">
-            <div class="messages"></div>
-            <div class="controls">    
-                <div class="row">
-                    <div class="panel panel-default">
-                    <div class="panel-body">
-                        <div class="col-md-8 col-mn-offest-4 col-xs-12">
-                            <div class="form-group">
-                                <label for="form_name">Full Name</label>
-                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your full name">
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <label for="form_email">Email</label>
-                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *">
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <label for="form_message">Message</label>
-                                <textarea id="form_message" name="message" class="form-control" placeholder="Message for me" rows="4"></textarea>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <input type="submit" class="btn btn-success btn-send" value="Send message">
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </form>
     </div>
     <footer class="footer">
         <div class="container-fluid">
