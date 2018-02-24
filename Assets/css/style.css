@@ -3,13 +3,11 @@ body {
     padding-bottom: 75px;
   }
 
-}
 .bg { 
     background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/confectionary.png");
     min-height: 100%; 
     background-position: center;
     background-repeat: repeat;
-    background-size: cover;
 }            
 
 .content-wrapper {
@@ -57,4 +55,19 @@ h1 {
 
 .navbar-brand {
     background-color: #4aaaa5;
+}
+
+
+.caption {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    text-align: center;
+    font-size: 24px;
+    margin-left:15px;
+    margin-right:15px;
 }
